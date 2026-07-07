@@ -1,5 +1,6 @@
 import React from "react";
-import { Github, Linkedin, Globe, Mail, Download } from 'lucide-react';
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
+import { Globe, Mail, Download } from 'lucide-react';
 import { triTable } from "three/examples/jsm/Addons.js";
 
 export const userData = {
@@ -11,7 +12,7 @@ export const userData = {
 export const linksData = [
     {
         id: 1,
-        title: "",
+        title: "Portfólio",
         url: "",
         icon: <Globe size={20} />,
     },
@@ -19,13 +20,13 @@ export const linksData = [
         id: 2,
         title: "Github",
         url: "https://github.com/MachadoRl",
-        icon: <Github size={20} />
+        icon: <FaGithub size={20} />
     },
     {
         id: 3,
         title: "Linkedin",
         url: "https://www.linkedin.com/in/rodrigolemesm/",
-        icon: <Linkedin size={20} />
+        icon: <FaLinkedin size={20} />
     },
     {
         id: 4,
