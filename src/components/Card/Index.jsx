@@ -3,38 +3,32 @@ import { Profile } from "../Profile/Index"
 import { Footer } from "../Footer/Index"
 import { linksData, userData } from "../../data/linksData"
 
-import { useRef } from 'react';
+import { useGlowEffect } from '../../hooks/useGlowEffect';
 
 export function Card() {
-    const cardRef = useRef(null);
+    const { ref, handleMouseMove } = useGlowEffect();
 
-    function handleMouseMove(e) {
-        const card = cardRef.current;
-        const rect = card.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
-        card.style.setProperty('--mouse-x', `${x}px`);
-        card.style.setProperty('--mouse-y', `${y}px`);
-    }
     return (
         <>
-            <div ref={cardRef}
+            <div ref={ref}
                 onMouseMove={handleMouseMove}
-                className="glow-card bg-gray-600/10 backdrop-blur-md rounded-2xl p-6 max-w-sm w-full relative h-60">
+                className="glow-card bg-gray-600/10 backdrop-blur-md rounded-2xl p-8 max-w-sm w-full relative">
                 <Profile
                     avatarUrl={userData.profileIcon}
                     name={userData.name}
                     bio={userData.bio}
                 />
 
-                {linksData.map((link) => (
-                    <LinkButton
-                        key={link.id}
-                        title={link.title}
-                        url={link.url}
-                        icon={link.icon}
-                    />
-                ))}
+                <div className="flex flex-col gap-3 mt-3">
+                    {linksData.map((link) => (
+                        <LinkButton
+                            key={link.id}
+                            title={link.title}
+                            url={link.url}
+                            icon={link.icon}
+                        />
+                    ))}
+                </div>
 
                 <Footer />
             </div>

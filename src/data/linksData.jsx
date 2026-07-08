@@ -1,7 +1,7 @@
 import React from "react";
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { Globe, Mail, Download } from 'lucide-react';
-import { triTable } from "three/examples/jsm/Addons.js";
+// import { triTable } from "three/examples/jsm/Addons.js";
 
 export const userData = {
     name: "Rodrigo Lemes Machado",
