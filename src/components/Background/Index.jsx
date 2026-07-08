@@ -3,7 +3,7 @@ import LightPillar from './LightPillar';
 export function Background() {
     return (
         <>
-            <div style={{ width: '100vw', height: '100vh', position: 'relative' }}>
+            <div style={{ width: '100vw', height: '100vh', position: 'fixed', top: '0', left: '0', zIndex: '-1' }}>
                 <LightPillar
                     topColor="#4f0210"
                     bottomColor="#4f0210"

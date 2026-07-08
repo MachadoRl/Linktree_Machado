@@ -7,7 +7,9 @@ function App() {
   return (
     <>
       <Background />
-      <Card />
+      <div className="realtive z-10 min-h-screen flex items-center justify-center">
+        <Card />
+      </div>
     </>
   )
 }

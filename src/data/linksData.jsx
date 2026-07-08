@@ -6,7 +6,7 @@ import { triTable } from "three/examples/jsm/Addons.js";
 export const userData = {
     name: "Rodrigo Lemes Machado",
     bio: "Desenvolvedor Front-End",
-    avatarUrl: "https://github.com/MachadoRl.png",
+    profileIcon: "https://github.com/MachadoRl.png",
 };
 
 export const linksData = [
