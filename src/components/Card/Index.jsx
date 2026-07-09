@@ -12,14 +12,14 @@ export function Card() {
         <>
             <div ref={ref}
                 onMouseMove={handleMouseMove}
-                className="glow-card bg-gray-600/10 backdrop-blur-md rounded-2xl p-8 max-w-sm w-full relative">
+                className="glow-card border border-gray-500/10 bg-black/20 backdrop-blur-lg rounded-2xl p-9 max-w-sm w-full relative tracking-wider shadow-mg">
                 <Profile
                     avatarUrl={userData.profileIcon}
                     name={userData.name}
                     bio={userData.bio}
                 />
 
-                <div className="flex flex-col gap-3 mt-3">
+                <div className="flex flex-col gap-4 mt-9">
                     {linksData.map((link) => (
                         <LinkButton
                             key={link.id}

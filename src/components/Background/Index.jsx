@@ -5,8 +5,8 @@ export function Background() {
         <>
             <div style={{ width: '100vw', height: '100vh', position: 'fixed', top: '0', left: '0', zIndex: '-1' }}>
                 <LightPillar
-                    topColor="#4f0210"
-                    bottomColor="#4f0210"
+                    topColor="#9fbeff"
+                    bottomColor="#143274"
                     intensity={0.6}
                     rotationSpeed={0.1}
                     glowAmount={0.003}
