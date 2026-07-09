@@ -37,7 +37,7 @@ export const linksData = [
     {
         id: 5,
         title: "Baixar Currículo",
-        url: "../../public/cv-Rodrigo.pdf",
+        url: "/cv-rodrigo.pdf",
         icon: <Download size={20} />
     }
 ]
